@@ -1,7 +1,7 @@
 import "./style.scss";
-import "initialBuild.js";
-import "tabThree.js";
-import "tabTwo.js";
+import {homePage} from "./initialBuild";
+import {contactUs} from "./tabThree";
+import {makeMenu} from "./tabTwo";
 
 tabTwo.addEventListener("click", () => {
   makeMenu();

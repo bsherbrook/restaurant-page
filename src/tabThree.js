@@ -1,4 +1,5 @@
-function contactUs() {
+export function contactUs() {
+  const contentBody= document.getElementById('content-body');
   contentBody.textContent = "";
   const titleCard = document.createElement("h1");
   titleCard.textContent = "Contact Us!";

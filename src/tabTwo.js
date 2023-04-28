@@ -11,7 +11,8 @@ function menuItem(title, blurb) {
   //pic.alt= `${title}`,
 }
 //menu event listener
-function makeMenu() {
+export function makeMenu() {
+  const contentBody= document.getElementById('content-body');
   contentBody.textContent = "";
   contentBody.appendChild(menuItem("test", "test again"));
   contentBody.appendChild(menuItem("again", "t4st again"));

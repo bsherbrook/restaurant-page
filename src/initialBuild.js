@@ -9,6 +9,9 @@ titleCard.innerHTML = "Restaurant Name";
 tabOne.innerHTML = "Tab 1";
 tabTwo.innerHTML = "Tab 2";
 tabThree.innerHTML = "Tab 3";
+tabOne.setAttribute('id','tabOne');
+tabTwo.setAttribute('id','tabTwo')
+tabThree.setAttribute('id','tabThree');
 pageHead.appendChild(titleCard);
 pageHead.appendChild(tabOne);
 pageHead.appendChild(tabTwo);
@@ -37,7 +40,7 @@ footer.classList.add("footer");
 footer.innerHTML = "Copyright Bryan Sherbrook 2023";
 pageBody.appendChild(footer);
 
-function homePage() {
+export function homePage() {
   contentBody.textContent = "";
   quoteOne.innerHTML = "Best food this side of Mississip!";
   quoteTwo.innerHTML = `"You won't regret it" -John Foodguy`;
