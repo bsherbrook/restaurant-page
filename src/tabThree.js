@@ -1,5 +1,7 @@
 export function contactUs() {
   const contentBody= document.getElementById('content-body');
+  const quoteBoxBox= document.getElementById('quoteBoxBox');
+  quoteBoxBox.textContent='';
   contentBody.textContent = "";
   const titleCard = document.createElement("h1");
   titleCard.textContent = "Contact Us!";

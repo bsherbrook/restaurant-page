@@ -32,12 +32,14 @@ body {
     align-items: center;   
     h2{
       color: rgb(255, 214, 52);
+      font-size: 45px;
+      margin: 0 0 10px 0;
     }
     #buttonBox{
       display: flex;
       justify-content: center;
       column-gap: 10px;
-
+      margin-bottom: 10px;
       button{
         border-radius: 15px;
       }
@@ -49,12 +51,57 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 25px;
-
+    #modalBio{
+      box-sizing: border-box;
+      width: 500px;
+      height: 750px;
+      position: absolute;
+      border-radius: 50px;
+      background-color:black;
+      margin-top: 2px;
+      opacity: 65%;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+      z-index: 1;
+      #modalHeader{
+        font-size: 25px;
+      }
+      #modalText{
+        font-size: 20px;
+      }
+    }
     #chefPic{
       width: 500px;
-      z-index: -1;
+      z-index: 0;
       position: absolute;
+      border-radius: 50px;
+      border-color:rgb(255, 214, 52);
+      border-width: 2px;
+      border-style: solid;
+      &:hover{
+        border-color: rgb(26, 148, 255);
+        cursor: pointer;
+      }
     }
   }
+  #quoteBoxBox{
+    display: flex;
+    justify-content: space-between;
+    margin: 250px 50px 0 50px;
 
+    #quoteBox{
+      box-sizing: border-box;
+      border-radius: 20px;
+      background-color: black;
+      width: 400px;
+      opacity: 70%;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }

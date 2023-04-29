@@ -13,7 +13,9 @@ function menuItem(title, blurb) {
 //menu event listener
 export function makeMenu() {
   const contentBody= document.getElementById('content-body');
+  const quoteBoxBox= document.getElementById('quoteBoxBox');
+  quoteBoxBox.textContent= '';
   contentBody.textContent = "";
-  contentBody.appendChild(menuItem("test", "test again"));
+  contentBody.appendChild(menuItem("", "test again"));
   contentBody.appendChild(menuItem("again", "t4st again"));
 }
