@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&family=Pacifico&family=Patrick+Hand+SC&family=Source+Sans+Pro&display=swap');
 body {
   background-color: black;
   color: white;
@@ -41,7 +40,19 @@ body {
       column-gap: 10px;
       margin-bottom: 10px;
       button{
+        color: white;
+        background-color: black;
         border-radius: 15px;
+        border: 2px solid gray;
+        padding:5px;
+        font-size: 20px;
+        font-weight: 800;
+        font-family: 'Patrick Hand SC', 'Source Sans Pro', cursive;;
+
+        &:hover{
+          border: 2px solid yellow;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -53,23 +64,24 @@ body {
     padding: 25px;
     #modalBio{
       box-sizing: border-box;
-      width: 500px;
-      height: 750px;
+      width: 503px;
+      height: 756px;
       position: absolute;
       border-radius: 50px;
       background-color:black;
-      margin-top: 2px;
       opacity: 65%;
       display: none;
       flex-direction: column;
       align-items: center;
-      padding: 15px;
+      padding: 40px 20px 15px 20px;
       z-index: 1;
       #modalHeader{
-        font-size: 25px;
+        font-size: 35px;
+        font-family: Patrick Hand SC, Source Sans Pro,  sans-serif;
       }
       #modalText{
-        font-size: 20px;
+        font-size: 22px;
+        font-family: Patrick Hand SC, Source Sans Pro, sans-serif;
       }
     }
     #chefPic{
