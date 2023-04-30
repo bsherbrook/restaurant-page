@@ -17,6 +17,7 @@ body {
     width: 100%;
     position: fixed;
     bottom: 0;
+    z-index: 1;
   }
   #backgroundPic{
     width: 100%;
@@ -109,11 +110,46 @@ body {
       background-color: black;
       width: 400px;
       opacity: 70%;
-      padding: 5px;
+      padding: 5px 10px 5px 10px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
     }
+      h3{
+        font-size: 25px;
+        margin-bottom: 5px;
+        font-family: 'Patrick Hand SC', 'Source Sans Pro',;
+      }
+      p{
+        font-family:'Patrick Hand SC', 'Source Sans Pro',;
+        font-size: 25px;
+      }
+      button{
+        margin-bottom: 5px;
+        border-radius: 15px;
+        border: 2px solid white;
+        background-color: black;
+        color: white;
+        padding: 4px;
+        font-size: 20px;
+        font-family: 'Patrick Hand SC';
+        &:hover{
+          cursor: pointer;
+          border-color: yellow;
+        }
+      }      
+  }
+  #aboutUs{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 70%;
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+    background-color: black;
+    
   }
 }

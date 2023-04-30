@@ -58,16 +58,29 @@ contentPic.alt="Chef Gabriel"
 contentPic.setAttribute('id','chefPic');
 const quoteOne = document.createElement("p");
 const quoteTwo = document.createElement("p");
+const quoteThree= document.createElement("p");
 const orderNow = document.createElement("p");
-quoteOne.innerHTML = "Best food this side of Mississip!";
-quoteTwo.innerHTML = `"You won't regret it" -John Foodguy`;
+const orderNowButton= document.createElement('button');
+const hours= document.createElement('h3');
+const hoursList= document.createElement('p');
+orderNowButton.textContent='Menu';
+hoursList.innerHTML='Mon-Fri: 10am-10pm<br>Sat:9am-11pm<br>Closed Sunday';
+hours.textContent='HOURS:';
+orderNowButton.setAttribute('id', 'orderNowButton');
+quoteOne.innerHTML = `"Best food this side of Mississip!"<br> - Mark Twain`;
+quoteTwo.innerHTML = "\"You won't regret it\" -John Foodguy";
+quoteThree.innerHTML= '"This beer fried chicken sends me!"<br> -Stacy Critic'
 orderNow.innerHTML = "Order it now online!";
 const quoteBoxBox= document.createElement('div');
 quoteBoxBox.setAttribute('id','quoteBoxBox');
 contentBody.appendChild(contentPic);
 quoteBox.appendChild(quoteOne);
 quoteBox.appendChild(quoteTwo);
+quoteBox.appendChild(quoteThree);
+quoteBoxTwo.appendChild(hours);
+quoteBoxTwo.appendChild(hoursList);
 quoteBoxTwo.appendChild(orderNow);
+quoteBoxTwo.appendChild(orderNowButton);
 pageBody.appendChild(contentBody);
 quoteBoxBox.appendChild(quoteBox);
 quoteBoxBox.appendChild(quoteBoxTwo);
@@ -80,9 +93,6 @@ pageBody.appendChild(footer);
 
 export function homePage() {
   contentBody.textContent = "";
-  quoteOne.innerHTML = "Best food this side of Mississip!";
-  quoteTwo.innerHTML = `"You won't regret it" -John Foodguy`;
-  orderNow.innerHTML = "Order it now online!";
   contentBody.appendChild(contentPic);
   pageBody.appendChild(contentBody);
   contentBody.appendChild(modalBio);
@@ -92,7 +102,9 @@ export function homePage() {
   contentBody.appendChild(contentPic);
   quoteBox.appendChild(quoteOne);
   quoteBox.appendChild(quoteTwo);
+  quoteBox.appendChild(quoteThree)
   quoteBoxTwo.appendChild(orderNow);
+  quoteBoxTwo.appendChild(orderNowButton);
   pageBody.appendChild(contentBody);
   quoteBoxBox.appendChild(quoteBox);
   quoteBoxBox.appendChild(quoteBoxTwo);
