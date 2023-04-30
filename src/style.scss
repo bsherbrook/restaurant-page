@@ -21,9 +21,10 @@ body {
   }
   #backgroundPic{
     width: 100%;
-    height: 800px;
+    height:max-content;
     position: absolute;
     z-index: -1;
+    
   }
   header{
     font-family: 'Pacifico', cursive; 
@@ -95,6 +96,31 @@ body {
       border-style: solid;
       &:hover{
         border-color: rgb(26, 148, 255);
+        cursor: pointer;
+      }
+    }
+    #menuBox{
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 25px;
+      width: 400px;
+    }
+    .menu-item{
+      border: 2px solid white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      width: 200px;
+      border-radius: 20px;
+      opacity: 70%;
+      padding: 10px;
+      
+      &:hover{
+        border-color: yellow;
         cursor: pointer;
       }
     }
