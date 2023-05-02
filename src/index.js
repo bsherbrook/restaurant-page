@@ -21,12 +21,3 @@ tabOne.addEventListener("click", () => {
 tabThree.addEventListener("click", () => {
   contactUs();
 });
-
-chefPic.addEventListener('mouseover', ()=>{
-  modalBio.style.display='flex';
-  //modalBio.classList.add('show');
-})
-
-modalBio.addEventListener('mouseleave', ()=>{
-  modalBio.style.display='none'
-})
